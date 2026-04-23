@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Shreya Verma — Senior Business Analyst / Product Owner. BFSI, Telecom, Fraud Management, Automation. Agile/SAFe. Portfolio." />
+  <title>Shreya Verma | Senior Business Analyst / Product Owner</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Shreya Verma | Senior Business Analyst / Product Owner" />
+  <meta property="og:description" content="6+ years across BFSI, Telecom, Fraud Management, Automation. Agile/SAFe. Delivered enterprise digital products." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts (system-first; optional Google font fallback) -->
+  <style>
+    :root{
+      --bg: #071321;
+      --panel: rgba(255,255,255,.06);
+      --panel2: rgba(255,255,255,.08);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.70);
+      --faint: rgba(255,255,255,.55);
+      --border: rgba(255,255,255,.12);
+      --teal: #20d3c2;
+      --teal2:#32f0dc;
+      --navy: #061a2e;
+      --shadow: 0 18px 40px rgba(0,0,0,.35);
+      --shadow2: 0 14px 26px rgba(0,0,0,.25);
+      --radius: 18px;
+      --radius2: 12px;
+      --max: 1120px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 700px at 15% 10%, rgba(32,211,194,.18), transparent 55%),
+        radial-gradient(900px 600px at 85% 15%, rgba(50,240,220,.10), transparent 55%),
+        radial-gradient(1000px 600px at 50% 100%, rgba(32,211,194,.10), transparent 55%),
+        linear-gradient(180deg, #06111f 0%, #050b13 60%, #04070c 100%);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      line-height: 1.55;
+      overflow-x:hidden;
+    }
+
+    a{color:inherit; text-decoration:none}
+    .container{width:min(var(--max), calc(100% - 40px)); margin:0 auto}
+    .pill{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:10px 14px;
+      border:1px solid var(--border);
+      border-radius:999px;
+      background:rgba(255,255,255,.04);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 22px rgba(0,0,0,.16);
+      color:var(--muted);
+      font-size:.92rem;
+    }
+    .pill .dot{width:8px; height:8px; border-radius:50%; background:var(--teal); box-shadow: 0 0 0 6px rgba(32,211,194,.12)}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px;
+      padding:12px 16px;
+      border-radius: 12px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      cursor:pointer;
+      transition: transform .14s ease, background .14s ease, border-color .14s ease;
+      font-weight: 600;
+    }
+    .btn:hover{transform: translateY(-2px); background: rgba(255,255,255,.09); border-color: rgba(32,211,194,.35)}
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(32,211,194,.96), rgba(50,240,220,.70));
+      color:#021017;
+      border-color: rgba(255,255,255,.18);
+      box-shadow: 0 16px 32px rgba(32,211,194,.18);
+    }
+    .btn.primary:hover{background: linear-gradient(135deg, rgba(50,240,220,.98), rgba(32,211,194,.80))}
+    .btn.ghost{background:transparent}
+    .btn.small{padding:10px 12px; border-radius: 10px; font-size:.95rem}
+
+    /* Header */
+    header{
+      position:sticky; top:0; z-index: 50;
+      background: rgba(6, 17, 31, .55);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+      gap:14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      font-weight: 800;
+      letter-spacing: .2px;
+    }
+    .logo{
+      width:38px; height:38px; border-radius: 12px;
+      background:
+        radial-gradient(12px 12px at 30% 30%, rgba(255,255,255,.5), transparent 60%),
+        linear-gradient(135deg, rgba(32,211,194,.95), rgba(7,19,33,1) 60%);
+      border:1px solid rgba(255,255,255,.14);
+      box-shadow: var(--shadow2);
+    }
+    nav ul{list-style:none; margin:0; padding:0; display:flex; gap:18px; align-items:center}
+    nav a{
+      color: var(--muted);
+      font-weight: 650;
+      font-size: .95rem;
+      padding:10px 10px;
+      border-radius: 10px;
+      transition: background .14s ease, color .14s ease;
+    }
+    nav a:hover{color: var(--text); background: rgba(255,255,255,.06)}
+    .nav-actions{display:flex; gap:10px; align-items:center}
+    .menu-btn{display:none}
+
+    /* Hero */
+    .hero{padding:56px 0 28px}
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 26px;
+      align-items: stretch;
+    }
+    .hero-card{
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: var(--radius);
+      padding: 30px;
+      box-shadow: var(--shadow);
+      position:relative;
+      overflow:hidden;
+    }
+    .hero-card:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background: radial-gradient(600px 220px at 30% 0%, rgba(32,211,194,.20), transparent 60%);
+      pointer-events:none;
+    }
+    .hero h1{
+      margin:12px 0 8px;
+      font-size: clamp(2rem, 2.8vw, 3rem);
+      line-height: 1.12;
+      letter-spacing: -0.6px;
+    }
+    .subtitle{
+      margin:0;
+      color: var(--muted);
+      font-size: 1.06rem;
+      max-width: 62ch;
+    }
+    .hero-meta{
+      display:flex; flex-wrap:wrap; gap:10px;
+      margin-top: 18px;
+    }
+    .hero-actions{
+      display:flex; flex-wrap:wrap; gap:12px;
+      margin-top: 22px;
+    }
+    .quick-stats{
+      display:grid; grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .stat{
+      padding:12px 12px;
+      background: rgba(255,255,255,.04);
+      border:1px solid rgba(255,255,255,.10);
+      border-radius: 14px;
+    }
+    .stat b{display:block; font-size: 1.1rem}
+    .stat span{color: var(--muted); font-size: .92rem}
+
+    .profile-card{
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: var(--shadow);
+      display:flex; flex-direction:column; gap:14px;
+      justify-content:space-between;
+    }
+    .avatar{
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 18px;
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.12);
+      overflow:hidden;
+      position:relative;
+      box-shadow: 0 16px 26px rgba(0,0,0,.25);
+    }
+    .avatar img{
+      width:100%; height:100%;
+      object-fit: cover;
+      display:block;
+    }
+    .profile-links{
+      display:flex; gap:10px; flex-wrap:wrap;
+    }
+
+    /* Sections */
+    section{padding: 26px 0}
+    .section-title{
+      display:flex; align-items:flex-end; justify-content:space-between;
+      gap: 18px;
+      margin-bottom: 12px;
+    }
+    .section-title h2{
+      margin:0;
+      font-size: 1.35rem;
+      letter-spacing: -0.2px;
+    }
+    .section-title p{
+      margin:0; color: var(--muted); max-width: 70ch;
+      font-size: .98rem;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+    }
+    .card{
+      background: rgba(255,255,255,.04);
+      border:1px solid rgba(255,255,255,.10);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow2);
+      padding: 18px;
+    }
+    .card h3{margin:0 0 6px; font-size: 1.08rem}
+    .card p{margin:0; color: var(--muted)}
+    .muted{color: var(--muted)}
+    .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top: 10px}
+    .chip{
+      padding: 8px 10px;
+      border-radius: 999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      color: rgba(255,255,255,.82);
+      font-weight: 650;
+      font-size: .86rem;
+    }
+
+    /* About */
+    .about{grid-column: span 7}
+    .highlights{grid-column: span 5}
+    .list{margin: 10px 0 0; padding-left: 18px; color: var(--muted)}
+    .list li{margin: 8px 0}
+
+    /* Experience */
+    .timeline{grid-column: span 12}
+    .role{
+      display:grid;
+      grid-template-columns: 170px 1fr;
+      gap: 14px;
+      padding: 14px 0;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+    .role:first-child{border-top:none; padding-top:0}
+    .role .when{color: var(--faint); font-weight: 700; font-size: .92rem}
+    .role .where b{display:block}
+    .role .where span{color: var(--muted); font-size: .94rem}
+    .role ul{margin: 8px 0 0; padding-left: 18px; color: var(--muted)}
+    .role li{margin: 6px 0}
+
+    /* Projects */
+    .project{grid-column: span 6; position:relative; overflow:hidden}
+    .project:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background: radial-gradient(550px 220px at 20% 0%, rgba(32,211,194,.14), transparent 55%);
+      pointer-events:none;
+    }
+    .project .meta{display:flex; flex-wrap:wrap; gap:8px; margin-top: 8px}
+    .badge{
+      padding:7px 10px;
+      background: rgba(32,211,194,.12);
+      border:1px solid rgba(32,211,194,.25);
+      color: rgba(240,255,252,.92);
+      border-radius: 999px;
+      font-weight: 750;
+      font-size: .82rem;
+    }
+    .project ul{margin: 10px 0 0; padding-left: 18px; color: var(--muted)}
+    .project li{margin: 6px 0}
+
+    /* Skills / Certs */
+    .skills{grid-column: span 7}
+    .certs{grid-column: span 5}
+    .two-col{display:grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px}
+    .kv{
+      border-radius: 14px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      padding: 12px;
+    }
+    .kv b{display:block; margin-bottom: 4px}
+    .kv span{color: var(--muted); font-size: .94rem}
+
+    /* Education / Contact */
+    .edu{grid-column: span 7}
+    .contact{grid-column: span 5}
+    .contact a.link{
+      display:inline-flex; gap:10px; align-items:center;
+      padding:10px 12px; border-radius: 12px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      margin-top: 10px;
+      color: var(--muted);
+    }
+    .contact a.link:hover{color: var(--text); border-color: rgba(32,211,194,.30)}
+    .footer{
+      padding: 28px 0 40px;
+      color: var(--muted);
+      text-align:center;
+      font-size:.93rem;
+    }
+
+    /* Mobile */
+    @media (max-width: 920px){
+      .hero-grid{grid-template-columns: 1fr}
+      .about, .highlights, .skills, .certs, .edu, .contact{grid-column: span 12}
+      .project{grid-column: span 12}
+      nav ul{display:none}
+      .menu-btn{display:inline-flex}
+      .quick-stats{grid-template-columns: 1fr 1fr 1fr}
+      .role{grid-template-columns: 1fr}
+    }
+
+    /* Mobile menu panel */
+    .mobile-menu{
+      display:none;
+      position: fixed;
+      inset: 64px 14px auto 14px;
+      background: rgba(6, 17, 31, .92);
+      border:1px solid rgba(255,255,255,.10);
+      border-radius: 16px;
+      padding: 10px;
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
+      z-index: 60;
+    }
+    .mobile-menu a{
+      display:block;
+      padding: 12px 12px;
+      border-radius: 12px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+    .mobile-menu a:hover{background: rgba(255,255,255,.06); color: var(--text)}
+    .mobile-menu.show{display:block}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div style="font-size:1.02rem; line-height:1.1;">Shreya Verma</div>
+          <div style="font-size:.86rem; color:var(--muted); font-weight:700;">Sr. Business Analyst • Product Owner</div>
+        </div>
+      </div>
+
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Products</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn small ghost" href="https://www.linkedin.com/in/shreya-verma-921b98136" target="_blank" rel="noreferrer">LinkedIn</a>
+        <button class="btn small menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile Navigation">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Products</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-card">
+          <span class="pill"><span class="dot" aria-hidden="true"></span>Open to impactful BA/PO opportunities • Enterprise Digital Products</span>
+
+          <h1>Senior Business Analyst / Product Owner<br/>building value-driven digital experiences</h1>
+
+          <p class="subtitle">
+            6+ years across <b>BFSI</b>, <b>Telecom</b>, <b>Fraud Management</b>, and <b>Automation</b> — specializing in requirement elicitation, user stories & epics, backlog prioritization, and Agile/SAFe delivery. <!-- from resume -->
+          </p>
+
+          <div class="hero-meta">
+            <span class="pill">Agile / Scrum</span>
+            <span class="pill">SAFe</span>
+            <span class="pill">Stakeholder Management</span>
+            <span class="pill">UAT</span>
+            <span class="pill">JIRA • Confluence • Visio • Figma</span>
+          </div>
+
+          <div class="quick-stats" aria-label="Quick stats">
+            <div class="stat">
+              <b>6+ years</b>
+              <span>BA / PO experience</span>
+            </div>
+            <div class="stat">
+              <b>BFSI + Telecom</b>
+              <span>Domain depth</span>
+            </div>
+            <div class="stat">
+              <b>Security + Fraud</b>
+              <span>High-stakes products</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View Delivered Products</a>
+            <a class="btn" href="#contact">Contact Me</a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/shreya-verma-921b98136" target="_blank" rel="noreferrer">View LinkedIn</a>
+          </div>
+
+          <p style="margin-top:16px; color:var(--muted); font-size:.95rem;">
+            Focus: delivering the best value to clients, stakeholders, and end users through continuous improvement.
+          </p>
+        </div>
+
+        <aside class="profile-card" aria-label="Profile">
+          <div class="avatar">
+            <!-- Replace profile.jpg with your actual image filename (e.g., image.png) -->
+            shreya profile pic .png
+          </div>
+
+          <div>
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:10px;">
+              <div>
+                <div style="font-weight:900; font-size:1.1rem;">Shreya Verma</div>
+                <div style="color:var(--muted); font-weight:700; font-size:.95rem;">Senior Business Analyst • Product Owner</div>
+              </div>
+              <span class="pill" title="Location">India • Global delivery</span
